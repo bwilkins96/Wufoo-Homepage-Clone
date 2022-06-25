@@ -1,0 +1,47 @@
+.dinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42%;
+    margin: auto;
+    color: #6e6c6c;
+    padding-bottom: 2.5em;
+}
+
+.dinos > img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.dinos p a {
+    text-decoration: none;
+    color: #69c5e4;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dinos p a:hover {
+    color: #b7e3f2;
+}
+
+.dinos .upper {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.dinos .lower {
+    font-size: 15px;
+    text-align: center;
+    width: fit-content;
+    line-height: 1.75em;
+    width: 90%;
+}
+
+@media screen and (max-width: 1050px) {
+    .dinos {
+        width: 100%;
+    }
+}

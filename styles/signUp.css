@@ -1,0 +1,66 @@
+.signUp {
+    background-image: url("../images/dino-background.png");
+    background-size: cover;
+    width: 100%;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.signUp > h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 0.25em;
+}
+
+.signUp > p {
+    font-size: 22px;
+}
+
+.signUp > a {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 8px;
+    background-color: #25d670;
+    border: 1px solid #6af26e;
+    padding: 12px 63px;
+    transition: 0.3s;
+    min-width: fit-content;
+}
+
+.signUp > a:hover {
+    background-color: #2be778;
+}
+
+@media screen and (max-width: 650px) {
+    .signUp > h2 {
+        font-size: 36px;
+
+        text-align: center;
+    }
+
+    .signUp > p {
+        font-size: 18px;
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .signUp > p {
+        font-size: 18px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signUp > h2 {
+        font-size: 32px;
+    }
+}

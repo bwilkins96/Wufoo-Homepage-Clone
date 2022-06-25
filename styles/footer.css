@@ -1,0 +1,144 @@
+footer {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .primary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+footer .primary > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+}
+
+footer .primary h2 {
+    margin-bottom: 0.5em;
+}
+
+footer .primary > div > h2 > a {
+    color: #3a3a3a;
+    font-size: 19px;
+}
+
+footer .primary > div > a {
+    color: #837c8d;
+    line-height: 2em;
+    font-size: 15px;
+}
+
+footer .secondary {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-bottom: 1.25em;
+    border-bottom: 1px solid lightgrey;
+}
+
+footer .secondary > div {
+    display: flex;
+    margin: 1em 0;
+    flex-wrap: wrap;
+    line-height: 1.75em;
+    align-items: center;
+}
+
+footer .secondary a {
+    color: #837c8d;
+    margin-right: 8px;
+    width: fit-content;
+}
+
+footer .secondary .head {
+    color: #6e6c6c;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+footer .secondary .dot {
+    background-color: #837c8d;
+    align-self: center;
+    height: 6px;
+    width: 6px;
+    border-radius: 20px;
+    margin-right: 8px;
+    position: relative;
+    bottom: 1px
+}
+
+.end {
+    color: #6e6c6c;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+    footer {
+        width: 100%;
+    }
+
+    .end {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    footer .primary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .primary > div {
+        margin-right: 0;
+        align-items: center;
+        line-height: 2.5em;
+    }
+
+    footer .primary h2 {
+        margin-bottom: 0;
+    }
+
+    footer .secondary .dot {
+        display: none;
+    }
+
+    footer .secondary {
+        align-items: center;
+    }
+
+    footer .secondary > div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        line-height: 2.5em;
+        margin-bottom: 2em;
+    }
+
+    footer .secondary .head {
+        margin-right: 0;
+
+    }
+
+    .end {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    footer .primary > div > a {
+        text-align: center;
+    }
+}

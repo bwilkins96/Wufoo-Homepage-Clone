@@ -1,0 +1,131 @@
+.main {
+    margin-top: 5em;
+    margin-bottom: 12em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .builder {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.main h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.main .upper {
+    font-size: 20px;
+    line-height: 1.75em;
+}
+
+.main .lower {
+    font-size: 14px;
+    line-height: 1.25em;
+}
+
+.main .lower > a {
+    color: #3a3a3a;
+}
+
+.main .video {
+    align-self: center;
+    border: 5px solid white;
+    box-shadow: 0 0 9px 2px rgb(157 157 157 / 25%);
+
+    width: 480px;
+    height: 280px;
+}
+
+.main .video > iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.main .btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.builder .btns .left {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 12px;
+    background-color: #2685C6;
+    padding: 12px 32px;
+    transition: 0.3s;
+    min-width: fit-content;
+}
+
+.builder .btns .left:hover {
+    background-color: #2f93d7;
+}
+
+.builder .btns .right {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #f6bb43;
+    padding: 12px 32px;
+    transition: 0.3s;
+    min-width: fit-content;
+}
+
+.builder .btns .right:hover {
+    background-color: #ffcf55;
+}
+
+@media screen and (max-width: 1050px) {
+    .main {
+        flex-direction: column;
+        margin-bottom: 8em;
+    }
+
+    .main .builder {
+        align-self: center;
+        max-width: 80%;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+
+    .main h1, .main .upper {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    .main .video {
+        width: 360px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main .video {
+        width: 100%;
+        height: auto * 1.4;
+    }
+
+    .main .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .btns .right {
+        margin-top: 12px;
+    }
+
+    .main .btns .left {
+        margin-right: 0;
+    }
+}

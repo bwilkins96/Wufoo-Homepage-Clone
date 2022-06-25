@@ -1,0 +1,262 @@
+.topNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 15px;
+    text-transform: uppercase;
+
+    padding-top: 0.6em;
+    width: 100%;
+}
+
+.topNavBar a img {
+    height: 41px;
+    width: 100px;
+}
+
+.topNavBar a {
+    text-decoration: none;
+}
+
+.top1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+
+    position: relative;
+    right: 5rem;
+}
+
+.top1 a {
+    color: #3a3a3a;
+    margin: 5px;
+}
+
+.top1 a:hover {
+    color: #e66760;
+}
+
+.top2 {
+    display: flex;
+    align-items: center;
+}
+
+.top2 #login {
+    color: #3a3a3a;
+    padding: 0 16px;
+}
+
+.top2 #login:hover span {
+    display: none;
+}
+
+.top2 #login:hover:before {
+    content: "Rawrr!";
+}
+
+.top2 #signUp {
+    margin-right: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #2685C6;
+    padding: 12px 16px;
+    transition: 0.3s;
+    min-width: fit-content;
+}
+
+.top2 #signUp:hover {
+    background-color: #2f93d7;
+}
+
+.tempBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 22%;
+    background-color: #f8fafb;
+}
+
+.tempBar a {
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.05s;
+    padding: 0.75em 3em;
+    text-align: center;
+}
+
+.tempBar a:hover {
+    color: #e66760;
+}
+
+.resoBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 56%;
+    background-color: #f8fafb;
+}
+
+.resoBar a {
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.05s;
+    padding: 0.75em 3em;
+    text-align: center;
+}
+
+.resoBar a:hover {
+    color: #e66760;
+}
+
+.hide {
+    display: none;
+}
+
+.menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .tempBar {
+        left: 18%;
+    }
+
+    .resoBar {
+        left: 52%
+    }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1350px) {
+    .tempBar {
+        left: 21%;
+    }
+
+    .resoBar {
+        left: 54%
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .top1 {
+        right: 0;
+    }
+
+    .tempBar {
+        left: 25%;
+    }
+
+    .resoBar {
+        left: 59%
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .top1 {
+        display: none;
+    }
+
+    .top2 #signUp {
+        display: none;
+    }
+
+    .menuBtn {
+        display: block;
+        color: #3a3a3a;
+        padding: 0 16px;
+        transition: 0.3s;
+    }
+
+    .menuBtn:hover {
+        color: #e66760;
+    }
+
+    .topNavBar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobileMenu {
+        width: 75%;
+        padding: 0;
+        position: absolute;
+    }
+
+    .mobileMenu > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        overflow-y: scroll;
+        background-color: lightcoral;
+        list-style: none;
+        height: 45em;
+        font-size: 17px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobileMenu > ul > li {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        padding: 2em 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobileMenu .menuLink {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 2em 40%;
+    }
+
+    .mobileMenu > ul > li:hover {
+        background-color: #e66760;
+    }
+
+    .mobileMenu .menuLink:hover {
+        color: #3a3a3a;
+    }
+
+    .moveOut {
+        animation: moveOut 0.175s linear;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mobileMenu .menuLink {
+        padding: 2em 30%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .mobileMenu .menuLink {
+        padding: 2em 25%;
+    }
+
+    .moveOut {
+        animation-duration: 0.125s;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .mobileMenu .menuLink {
+        padding: 2em 15%;
+    }
+}
+
+@keyframes moveOut {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

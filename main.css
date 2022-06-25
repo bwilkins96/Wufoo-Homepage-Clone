@@ -1,0 +1,19 @@
+@import url("styles/topNavBar.css");
+@import url("styles/mainCont.css");
+@import url("styles/trusted.css");
+@import url("styles/dinos.css");
+@import url("styles/useCases.css");
+@import url("styles/signUp.css");
+@import url("styles/slider.css");
+@import url("styles/footer.css");
+
+body {
+    background-color: #fff;
+    font-family: "National", "Helvetica", "Arial", sans-serif;
+    color: #3a3a3a;
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+/* border: 2px solid red; */

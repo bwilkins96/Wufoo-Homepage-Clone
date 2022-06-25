@@ -1,0 +1,62 @@
+.useCases {
+    display: flex;
+    width: 70%;
+    margin: 2em auto 5em;
+}
+
+.useCases .card {
+    display: flex;
+}
+
+.useCases .card > img {
+    height: 52px;
+    width: 52px;
+    padding-right: 1em;
+}
+
+.useCases .card .content {
+    display: flex;
+    flex-direction: column;
+    color: #6e6c6c;
+    padding-right: 2em;
+    width: 75%;
+}
+
+.useCases .card .content > h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0 auto;
+}
+
+.useCases .card .content > p {
+    font-size: 15px;
+    margin-top: 0.75em;
+    line-height: 1.5em;
+}
+
+.useCases .card .content a {
+    text-decoration: none;
+    color: #69c5e4;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.useCases .card .content a:hover {
+    color: #b7e3f2;
+}
+
+@media screen and (max-width: 1050px) {
+    .useCases {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .useCases {
+        width: 90%;
+    }
+
+    .useCases .card .content {
+        width: 90%;
+    }
+}
